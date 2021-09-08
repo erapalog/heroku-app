@@ -8,4 +8,5 @@ app.get('/', (req, res) => {
     res.redirect('/index.html')
 })
 
-app.listen(3000)
+var port = process.env.PORT || 3000;
+app.listen(port);
